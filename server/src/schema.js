@@ -25,12 +25,31 @@ type Country {
   alpha3_code: String
 }
 
+type MovieInfo {
+  directors: [String],
+  release_date: String,
+  rating: Float,
+  genres: [String],
+  image_url: String,
+  plot: String,
+  rank: Int,
+  running_time_secs: Int,
+  actors: [String]
+}
+
+type Movie {
+  year: Int,
+  title: String,
+  info: MovieInfo
+}
+
 # This type specifies the entry points into our API. In this case
 # there is only one - "channels" - which returns a list of channels.
 type Query {
    channels: [Channel]
    channel(name: String): Channel
-   countries: [Country]
+   countries: [Country],
+   movie(year:Int, title:String): Movie
 }
 
 # The mutation root type, used to define all mutations.

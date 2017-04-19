@@ -29,7 +29,7 @@ Try the following queries to test the different connectors.
 
 To see all the channels and respective messages:
 
-```json
+```
 {
   channels {
     name,
@@ -42,7 +42,7 @@ To see all the channels and respective messages:
 
 ### DynamoDB
 
-```json
+```
 {
   movie(title:"Batman", year: 1989) {
     year
@@ -64,7 +64,7 @@ To see all the channels and respective messages:
 
 ### Rest Endpoint
 
-```json
+```
 {
   countries {
     name

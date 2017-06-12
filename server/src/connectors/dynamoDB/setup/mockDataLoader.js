@@ -1,4 +1,4 @@
-// src/connectors/dynamoDB/setup/mockDataLoader.js
+// server/src/connectors/dynamoDB/setup/mockDataLoader.js
 
 var fs = require('fs');
 

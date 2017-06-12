@@ -1,4 +1,4 @@
-// src/connectors/rest-endpoints/country.js
+// server/src/connectors/rest-endpoints/country.js
 
 import rp from 'request-promise';
 

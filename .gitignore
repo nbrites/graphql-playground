@@ -1,3 +1,5 @@
 npm-debug.log
 server/node_modules
-server/playground.sqlite
+server/build
+server/src/connectors/sqlite/playground.sqlite
+server/src/connectors/dynamoDB/dynamodb_local_latest

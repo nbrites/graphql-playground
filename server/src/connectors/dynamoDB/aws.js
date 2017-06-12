@@ -1,4 +1,4 @@
-// src/connectors/dynamoDB/aws.js
+// server/src/connectors/dynamoDB/aws.js
 
 var AWSSdk = require("aws-sdk");
 

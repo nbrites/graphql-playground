@@ -1,9 +1,9 @@
-// src/connectors/dynamoDB/setup/table.js
+// server/src/connectors/dynamoDB/setup/dataDefinition.js
 
 import { AWS } from './../aws';
 import { MockDataLoader } from './mockDataLoader';
 
-export const Table = {
+export const TableMovies = {
     create: () => {
         var dynamodb = new AWS.DynamoDB();
 

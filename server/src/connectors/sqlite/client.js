@@ -4,7 +4,6 @@ import { Movie, MovieInfo } from './setup/dataDefinition';
 
 export const SqliteClient = {
   get: (year, title) => {
-    console.log('Sqlite client');
     var table = "Movies";
 
     var params = {

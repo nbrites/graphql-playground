@@ -1,4 +1,4 @@
-// src/connectors/sqlite/setup/init.js
+// server/src/connectors/sqlite/setup/init.js
 
 import { Movie, MovieInfo } from './dataDefinition';
 import { db } from '../db';

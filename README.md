@@ -57,6 +57,8 @@ Go to 'localhost:4000/graphiql/dynamodb' and explore using graphiql.
 
 ### Rest Endpoint
 
+The query bellow can be run in all graphiql endpoints listed above.
+
 ```
 {
   countries {
@@ -66,4 +68,3 @@ Go to 'localhost:4000/graphiql/dynamodb' and explore using graphiql.
   }
 }
 ```
-

@@ -1,23 +1,6 @@
-// src/schema.js
+// server/src/schema.js
 
-import { makeExecutableSchema } from 'graphql-tools';
-
-import { resolvers } from './resolvers';
-
-const typeDefs = `
-
-type Channel {
-   id: ID!                # "!" denotes a required field
-   name: String
-   messages: [Message]
-}
-
-type Message {
-   id: ID!                # "!" denotes a required field
-   timestamp: String
-   text: String
-   channel: [Channel]
-}
+export const typeDefs = `
 
 type Country {
   name: String
@@ -43,21 +26,9 @@ type Movie {
   info: MovieInfo
 }
 
-# This type specifies the entry points into our API. In this case
-# there is only one - "channels" - which returns a list of channels.
+# This type specifies the entry points into the API
 type Query {
-   channels: [Channel]
-   channel(name: String): Channel
-   countries: [Country],
-   movie(year:Int, title:String): Movie
-}
-
-# The mutation root type, used to define all mutations.
-type Mutation {
-  # A mutation to add a new channel to the list of channels
-  addChannel(name: String!): Channel
+  countries: [Country],
+  movie(year:Int, title:String): Movie
 }
 `;
-
-const schema = makeExecutableSchema({ typeDefs, resolvers });
-export { schema };

@@ -1,4 +1,4 @@
-// src/connectors/dynamoDB/client.js
+// server/src/connectors/dynamoDB/client.js
 
 import { AWS } from './aws';
 

@@ -9,38 +9,23 @@ A GraphQL server that allows the user to interact with data using GraphiQL.
 - GraphQL Express
 - GraphiQL Express
 - Data connectors:
-  - Sqlite (default)
+  - Sqlite
+    - Run 'node run setup-sqlite' to create and populate the sqlite instance
   - DynamoDB
     - Expects a local DynamoDB instance to run on 'localhost:3001' (see [Download and Run DynamoDB Locally](http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.Download.html))
-    - Run 'node run setup-dynamodb' to create and populate the instance
-  - Rest enpoints
+    - Go to the local instance folder and run 'java -Djava.library.path=./DynamBLocal_lib -jar DynamoDBLocal.jar -sharedDb -inMemory -port 3001'
+    - Run 'node run setup-dynamodb' to create and populate the DynamoDB instance
+  - Rest endpoints
 
 ## How to install and run
 
+- Enter 'server' folder
 - Run 'npm install'
 - Run 'npm start'
-- Go to 'localhost:4000/graphiql' and explore using graphiql.
 
 ## Queries
 
-Try the following queries to test the different connectors.
-
-### Sqlite
-
-To see all the channels and respective messages:
-
-```
-{
-  channels {
-    name,
-    messages {
-      text
-    }
-  }
-}
-```
-
-### DynamoDB
+Try the following query on the different connectors.
 
 ```
 {
@@ -62,7 +47,17 @@ To see all the channels and respective messages:
 }
 ```
 
+### Sqlite
+
+Go to 'localhost:4000/graphiql/sqlite' and explore using graphiql.
+
+### DynamoDB
+
+Go to 'localhost:4000/graphiql/dynamodb' and explore using graphiql.
+
 ### Rest Endpoint
+
+The query bellow can be run in all graphiql endpoints listed above.
 
 ```
 {
@@ -73,4 +68,3 @@ To see all the channels and respective messages:
   }
 }
 ```
-

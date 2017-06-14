@@ -1,6 +1,5 @@
-// src/connectors/dynamoDB/setup/init.js
+// server/src/connectors/dynamoDB/setup/init.js
 
-import { AWS } from './../aws';
-import { Table } from './table';
+import { TableMovies } from './dataDefinition';
 
-Table.create();
+TableMovies.create();

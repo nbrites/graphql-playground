@@ -15,7 +15,7 @@ A GraphQL server that allows the user to interact with data using GraphiQL.
     - Expects a local DynamoDB instance to run on 'localhost:3001' (see [Download and Run DynamoDB Locally](http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.Download.html))
     - Go to the local instance folder and run 'java -Djava.library.path=./DynamBLocal_lib -jar DynamoDBLocal.jar -sharedDb -inMemory -port 3001'
     - Run 'node run setup-dynamodb' to create and populate the DynamoDB instance
-  - Rest endpoints
+  - REST endpoints
 
 ## How to install and run
 
